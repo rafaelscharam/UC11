@@ -28,6 +28,17 @@ namespace Chapter.WebApi
         {
             services.AddControllers();
 
+            services.AddCors(options => 
+            {
+                options.AddPolicy("CorsPolicy",
+                builder =>
+                {
+                    builder.WithOrigins("http://localhost:3000")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+                });
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Version = "v1", Title = "Chapter.WebApi" });
@@ -36,6 +47,8 @@ namespace Chapter.WebApi
             services.AddScoped<ChapterContext, ChapterContext>();
 
             services.AddTransient<LivroRepository, LivroRepository>();
+
+            services.AddTransient<UsuarioRepository,UsuarioRepository>();
 
         }
 
@@ -64,6 +77,8 @@ namespace Chapter.WebApi
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 
