@@ -67,3 +67,8 @@ E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\obj\Debu
 E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\obj\Debug\net5.0\ref\Chapter.WebApi.dll
 E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\obj\Debug\net5.0\Chapter.WebApi.pdb
 E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\obj\Debug\net5.0\Chapter.WebApi.genruntimeconfig.cache
+E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\obj\Debug\net5.0\Chapter.WebApi.MvcApplicationPartsAssemblyInfo.cs
