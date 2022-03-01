@@ -1,5 +1,6 @@
 ﻿using Chapter.WebApi.Models;
 using Chapter.WebApi.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,6 +11,8 @@ namespace Chapter.WebApi.Controlers
 
     [Route("api/[controller]")]
     [ApiController]
+
+    [Authorize]
     public class UsuariosController : ControllerBase
     {
         private readonly UsuarioRepository _usuarioRepository;
@@ -64,7 +67,8 @@ namespace Chapter.WebApi.Controlers
             {
                 _usuarioRepository.Cadastrar(u);
 
-                return StatusCode(201);
+                //return StatusCode(201);
+                return Ok("Usuario Cadastrado");
 
             }
             catch (Exception e)
@@ -83,7 +87,8 @@ namespace Chapter.WebApi.Controlers
             {
                 _usuarioRepository.Atualizar(id, u);
 
-                return StatusCode(204);
+                //return StatusCode(204);
+                return Ok("Usuario Atualizado");
 
             }
             catch (Exception e)
@@ -99,7 +104,8 @@ namespace Chapter.WebApi.Controlers
             {
                 _usuarioRepository.Deletar(id);
 
-                return StatusCode(204);
+                //return StatusCode(204);
+                return Ok("Usuario Deletado");
 
             }
             catch (Exception e)

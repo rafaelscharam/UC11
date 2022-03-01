@@ -21,7 +21,6 @@ E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debu
 E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debug\net5.0\Newtonsoft.Json.dll
 E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
@@ -72,3 +71,4 @@ E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debu
 E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\obj\Debug\net5.0\Chapter.WebApi.MvcApplicationPartsAssemblyInfo.cs
+E:\Xerno\ESTUDOS\Curso\UC11\ChapterWebApi\Chapter.WebApi\Chapter.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

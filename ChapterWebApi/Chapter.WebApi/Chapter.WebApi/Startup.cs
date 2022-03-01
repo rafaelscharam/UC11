@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
@@ -44,6 +45,25 @@ namespace Chapter.WebApi
                 c.SwaggerDoc("v1", new OpenApiInfo { Version = "v1", Title = "Chapter.WebApi" });
             });
 
+            services.AddAuthentication(options =>
+            {
+                    options.DefaultAuthenticateScheme = "JwtBearer";
+                    options.DefaultChallengeScheme = "JwtBearer" ;
+            }
+            ).AddJwtBearer("JwtBearer", options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("chapter-chave-autenticacao")),
+                    ClockSkew = TimeSpan.FromMinutes(5),
+                    ValidIssuer = "Chapter.WebApi",
+                    ValidAudience = "Chapter.WebApi"
+                };
+            });
+
             services.AddScoped<ChapterContext, ChapterContext>();
 
             services.AddTransient<LivroRepository, LivroRepository>();
@@ -79,6 +99,8 @@ namespace Chapter.WebApi
             app.UseRouting();
 
             app.UseCors("CorsPolicy");
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

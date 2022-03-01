@@ -1,5 +1,6 @@
 ﻿using Chapter.WebApi.Models;
 using Chapter.WebApi.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -11,6 +12,9 @@ namespace Chapter.WebApi.Controlers
 
     [Route("api/[controller]")]
     [ApiController]
+    
+    //[Authorize]
+
     public class LivrosController : ControllerBase
     {
         private readonly LivroRepository _livroRepository;
@@ -66,7 +70,8 @@ namespace Chapter.WebApi.Controlers
             {
                 _livroRepository.Cadastrar(livro);
 
-                return StatusCode(201);
+                //return StatusCode(201);
+                return Ok("Livro Cadastrado");
 
             }
             catch (Exception e)
@@ -85,7 +90,8 @@ namespace Chapter.WebApi.Controlers
             {
                 _livroRepository.Atualizar(id, livro);
 
-                return StatusCode(204);
+                //return StatusCode(204);
+                return Ok("Livro Atualizado");
 
             }
             catch (Exception e)
@@ -101,7 +107,8 @@ namespace Chapter.WebApi.Controlers
             {
                 _livroRepository.Deletar(id);
 
-                return StatusCode(204);
+                //return StatusCode(204);
+                return Ok("Livro Deletado");
 
             }
             catch (Exception e)
